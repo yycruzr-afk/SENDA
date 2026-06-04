@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Map</title>
+
+    <link rel="stylesheet" href="./css/generales.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/treemapStyles.css">
+</head>
+
+<body>
+
+    <header class="cabezera">
+
+        <a class="boton_general boton_atras" href="index.html">
+            <img src="./logos/arrow_black.svg" alt="">
+        </a>
+
+        <h1>TREE MAP</h1>
+
+        <nav class="menu__nav">
+            <a class="menu__item" href="#">Roadmaps</a>
+            <a class="menu__item" href="#">Métodos</a>
+            <a class="menu__item" href="#">Comparador</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filtros">
+            <span class="filtros__item">filtros</span>
+            <div class="filtros__item">
+                <label for="especialidad" class="label__select">Especialidad</label>
+                <select id="especialidad" class="select__filtros">
+                    <option value="" selected>Ninguno</option>
+                    <option value="">Desarrollo de Software</option>
+                    <option value="">Redes y Conectividad</option>
+                    <option value="">Gestión de TI</option>
+                </select>
+            </div>
+
+            <div class="filtros__item">
+                <label for="enfoque" class="label__select">Enfoque</label>
+                <select id="enfoque" class="select__filtros">
+                    <option value="" selected>Ninguno</option>
+                    <option value="">Mercado Laboral Actual</option>
+                    <option value="">Malla Curricular</option>
+                </select>
+            </div>
+        </div>
+
+        <section style="height: auto;">
+            <div class="bloque">
+                <div class="sub_Bloque bloque_1 bloque_tema">
+                    <h2>Desarrollo de Software</h2>
+                    <div>
+                        <div class="sub_Bloque_tema bloque_1_1">
+                            <h2>Estructuras de Datos y Algoritmos</h2>
+                        </div>
+                        <div class="sub_Bloque_tema bloque_1_2">
+                            <h2>Arquitectura de Software y APIs</h2>
+                        </div>
+                        <div class="sub_Bloque_tema bloque_1_3">
+                            <h2>Pruebas Unitarias y QA</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_Bloque bloque_2 bloque_tema">
+                    <h2>Infraestructura y Cloud</h2>
+
+                    <div>
+                        <div class="sub_Bloque_tema bloque_2_1">
+                            <h2>Bases de Datos (SQL / NoSQL)</h2>
+                        </div>
+                        <div class="sub_Bloque_tema bloque_2_2">
+                            <h2>Despliegues y DevOps</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_Bloque bloque_3 bloque_tema">
+                    <h2>Gestión de Proyectos y TI</h2>
+
+                    <div>
+                        <div class="sub_Bloque_tema bloque_3_1">
+                            <h2>Metodologías Ágiles</h2>
+                        </div>
+                        <div class="sub_Bloque_tema bloque_3_2">
+                            <h2>Gobernanza de TI</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor__principal">
+            <div>
+                <figure class="encabezado__logo">
+                    <img src="./logos/logo.png" alt="Logo de Senda" width="50" height="70">
+                </figure>
+                <div class="encabezado__textos">
+                    <h2 class="encabezado__titulo">SENDA</h2>
+                    <p class="encabezado__acronimo">Software de Estandarización de Niveles y Dependencias de
+                        Aprendizaje</p>
+                </div>
+            </div>
+            <div>
+                <p>UNIVERSIDAD NACIONAL DE TRUJILLO</p>
+                <p>Escula Profesional de Ingeniería de Sistemas</p>
+            </div>
+        </div>
+
+        <div class="contenedor_copyright">
+            <p>© 2026 S.E.N.D.A. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

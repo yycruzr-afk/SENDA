@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENDA</title>
+    <link rel="stylesheet" href="./css/generales.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="icon" href="./logos/logo.png" type="image/.png">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo-box">
+            <figure class="encabezado__logo">
+                <img src="./logos/logo.png" alt="Logo de Senda" width="50" height="70">
+            </figure>
+            <div class="encabezado__textos">
+                <h2 class="encabezado__titulo">SENDA</h2>
+                <p class="encabezado__acronimo">Software de Estandarización de Niveles y Dependencias de
+                    Aprendizaje</p>
+            </div>
+        </div>
+
+        <nav class="menu__nav">
+            <a class="menu__item" href="treemap.html">TreeMap</a>
+            <a class="menu__item" href="#">Roadmaps</a>
+            <a class="menu__item" href="#">Métodos</a>
+            <a class="menu__item" href="#">Comparador</a>
+            <button class="boton_general boton_menu_inicioSesion" id="boton_inicio_sesion">Iniciar Sesion</button>
+        </nav>
+        <button class="btn__hamburgesa">
+            <img src="./logos/menu.png" alt="logo menu">
+        </button>
+
+        <div class="menu_hamburgesa">
+            <a class="menu__item" href="treemap.html">TreeMap</a>
+            <a class="menu__item" href="#">Roadmaps</a>
+            <a class="menu__item" href="#">Métodos</a>
+            <a class="menu__item" href="#">Comparador</a>
+        </div>
+
+        <dialog id="inicio_sesion">
+            <button class="boton_general boton_atras btn_back_index" id="btn_index_atras">
+                <img src="./logos/arrow_black.svg" alt="">
+            </button>
+            <div class="contenedor_modal">
+                <h2>Iniciar Sesion</h2>
+
+                <form class="contenedor_inputs">
+                    <label class="inputs__label">Email</label>
+                    <input type="email" class="input" placeholder="ricardoRuiz@gmail.com" required>
+
+                    <label class="inputs__label">Contraseña</label>
+                    <input type="password" class="input" placeholder="bFfFnoaEyYMNzANb6kiHn5" required>
+
+                    <div>
+                        <a href="">¿No tienes cuenta?</a>
+                        <a href="">¿Se te olvido tu contraseña?</a>
+                    </div>
+
+                    <button class="boton_general boton__input">Iniciar Sesión</button>
+                </form>
+
+                <div class="contenedor__extras">
+                    <fieldset>
+                        <legend>Otras forma de inciar sesión</legend>
+
+                        <a href="https://google.com" target="_blank">
+                            <img src="./logos/google.svg" alt="logo de google" class="iconos_login">
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank">
+                            <img src="./logos/facebook.svg" alt="logo de facebook" class="iconos_login">
+                        </a>
+
+                        <a href="https://github.com" target="_blank">
+                            <img src="./logos/github.svg" alt="logo de github" class="iconos_login">
+                        </a>
+                    </fieldset>
+
+                </div>
+            </div>
+        </dialog>
+
+    </header>
+
+    <main>
+
+        <section class="portada">
+            <div class="portada_info">
+                <p class="portada__bienvenida">Bienvenido a</p>
+                <h1 class="portada__titulo">SENDA</h1>
+                <p class="portada__descripcion">Software de Estandarización de Niveles y Dependencias de Aprendizaje</p>
+
+                <button class="boton_general portada__boton">Empezar</button>
+            </div>
+
+            <video class="portada_video" src="./videos/fondo.mp4" autoplay muted loop loading="lazy"></video>
+            <div class="portada_relleno"></div>
+        </section>
+
+        <section class="modulos_section">
+
+            <h2 class="modulo__titulo">Explora tu Camino Técnico</h2>
+
+            <div class="modulos">
+                <div class="modulos__card">
+                    <img class="card__img" src="./imagenes/treemap.png" alt="">
+                    <h2>TREEMAP</h2>
+                    <p>
+                        Organiza y mide el nivel de tus habilidades actuales. Permite identificar de un vistazo tus
+                        puntos
+                        fuertes, las áreas que requieres reforzar y la distribución de tu conocimiento técnico dentro de
+                        tu
+                        perfil profesional.
+                    </p>
+                    <button class="boton_general btn_card" onclick="window.location.href='treemap.html';">Vamos</button>
+                </div>
+                <div class="modulos__card">
+                    <img class="card__img" src="./imagenes/roadmap.jpg" alt="">
+                    <h2>ROADMAP</h2>
+                    <p>
+                        Traza la ruta de aprendizaje ideal para tus metas. Permite estructurar los pasos necesarios para
+                        dominar una tecnología, organizar los cursos que debes tomar y medir tu progreso en cada etapa
+                        del
+                        camino.
+                    </p>
+                    <button class="boton_general btn_card">Vamos</button>
+                </div>
+                <div class="modulos__card">
+                    <img class="card__img" src="./imagenes/metodos.jpg" alt="">
+                    <h2>Métodos</h2>
+                    <p>
+                        Aplica sistemas de estudio que potencien tu retención. Permite optimizar tus sesiones de repaso,
+                        validar qué técnicas te funcionan mejor (como Pomodoro o Feynman) y acelerar la comprensión de
+                        temas
+                        complejos.
+                    </p>
+                    <button class="boton_general btn_card">Vamos</button>
+                </div>
+                <div class="modulos__card">
+                    <img class="card__img" src="./imagenes/comparador.png" alt="">
+                    <h2>Comparador</h2>
+                    <p>
+                        Analiza los planes de estudio de distintos centros. Permite evaluar las asignaturas de cada
+                        universidad, contrastar los enfoques de sus carreras y tomar la mejor decisión para tu futuro
+                        académico.
+                    </p>
+                    <button class="boton_general btn_card">Vamos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre_proyecto">
+            <div>
+                <h2>¿Sobre el proyecto?</h2>
+
+                <div class="tarjetaSobreProyecto">
+                    <h3>Centralización Curricular</h3>
+                    <p>
+                        Centraliza y estructura los conocimientos exigidos en la ingeniería de sistemas, resolviendo la
+                        falta de claridad y la desarticulación en las rutas de aprendizaje académico.
+                    </p>
+                </div>
+                <div class="tarjetaSobreProyecto">
+                    <h3>Mapeo de Dependencias</h3>
+                    <p>
+                        Permite a estudiantes, autodidactas y coordinadores académicos visualizar las dependencias
+                        reales entre materias, optimizando el proceso educativo de inicio a fin.
+                    </p>
+                </div>
+                <div class="tarjetaSobreProyecto">
+                    <h3>Enfoque Global (Mercado Laboral)</h3>
+                    <p>
+                        Conecta la formación universitaria de la malla curricular con las competencias tecnológicas más
+                        críticas y demandadas por la industria global de software.
+                    </p>
+                </div>
+
+            </div>
+
+            <img src="./imagenes/mapaNodos.jpg" alt="imagen de nodos">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor__principal">
+            <div class="foto__footer">
+                <figure>
+                    <img src="./logos/logo.png" alt="Logo de Senda" width="50" height="70">
+                </figure>
+                <div>
+                    <h2>SENDA</h2>
+                    <p>Software de Estandarización de Niveles y Dependencias de Aprendizaje</p>
+                </div>
+            </div>
+            <div class="menu__footer">
+                <a class="menu__item" href="treemap.html">TreeMap</a>
+                <a class="menu__item" href="#">Roadmaps</a>
+                <a class="menu__item" href="#">Métodos</a>
+                <a class="menu__item" href="#">Comparador</a>
+            </div>
+        </div>
+
+        <div class="contenedor__principal contenedor_copyright">
+            <p>© 2026 S.E.N.D.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
