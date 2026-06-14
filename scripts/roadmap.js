@@ -5,14 +5,14 @@ let listaMaps = [
     "CSS3",
     "JavaScript",
     "TypeScript",
-    "React JS",
+    "React",
     "Vue JS",
     "Angular",
     "Svelte",
     "Next JS",
     "Nuxt JS",
     "Gatsby",
-    "Remix JS",
+    "Remix",
     "Solid JS",
     "Qwik",
     "Alpine JS",
@@ -23,7 +23,6 @@ let listaMaps = [
     "Sass",
     "Less",
     "Stylus",
-    "CSS Modules",
     "Styled Components",
     "Material UI",
     "Chakra UI",
@@ -31,10 +30,11 @@ let listaMaps = [
     // --- ENTORNOS DE EJECUCIÓN Y HERRAMIENTAS FRONTEND ---
     "Vite",
     "Webpack",
-    "NPM y PNPM",
+    "NPM",
+    "PNPM",
     "Yarn",
     "Bun",
-    "Deno",
+    "Deno JS",
     "Babel",
 
     // --- BACKEND Y LENGUAJES DE PROGRAMACIÓN ---
@@ -44,42 +44,40 @@ let listaMaps = [
     "C Plus Plus",
     "C Sharp",
     "PHP",
-    "Ruby on Rails",
-    "Go Lang",
+    "Ruby",
+    "Rails",
+    "Go",
     "Rust",
     "Kotlin",
     "Scala",
     "Elixir",
     "Dart",
-    "TypeScript Backend",
 
     // --- FRAMEWORKS BACKEND ---
     "Laravel",
     "Django",
-    "Spring Boot",
-    "Express JS",
+    "Spring",
+    "Express",
     "FastAPI",
     "Nest JS",
-    "ASP NET Core",
+    "DOT NET Core",
     "Symfony",
     "Flask",
-    "Koa JS",
     "Adonis JS",
 
     // --- DESARROLLO MÓVIL ---
     "Flutter",
     "React Native",
     "Swift",
-    "Kotlin Multiplatform",
     "Ionic",
-    "Apache Cordova",
+    "Apache",
     "Xamarin",
 
     // --- BASES DE DATOS RELACIONALES (SQL) ---
     "MySQL",
     "PostgreSQL",
     "SQLite",
-    "Oracle DB",
+    "Oracle",
     "Microsoft SQL Server",
     "MariaDB",
 
@@ -92,36 +90,35 @@ let listaMaps = [
     "Neo4j",
 
     // --- ORMS Y QUERY BUILDERS ---
-    "Prisma ORM",
+    "Prisma",
     "Sequelize",
     "Mongoose",
-    "TypeORM",
     "Hibernate",
 
     // --- PRUEBAS (TESTING) ---
     "Jest",
-    "Cypress",
+    "Cypress IO",
     "Playwright",
     "Vitest",
     "Selenium",
     "Mocha",
-    "Chai",
     "Puppeteer",
 
     // --- DEVOPS, CI/CD Y SERVIDORES ---
-    "Git y GitHub",
-    "GitLab CI",
+    "Git",
+    "GitHub",
+    "GitLab",
     "GitHub Actions",
     "Jenkins",
     "Docker",
     "Kubernetes",
     "Nginx",
-    "Apache HTTP Server",
+    "Apache AIR Flow",
 
     // --- CLOUD Y PLATAFORMAS (BAAS) ---
-    "AWS Amazon Web Services",
+    "Amazon Web Services",
     "Google Cloud",
-    "Microsoft Azure",
+    "Azure",
     "Vercel",
     "Netlify",
     "Supabase",
@@ -136,24 +133,34 @@ let listaMaps = [
 
     // --- ARQUITECTURA, APIs Y MANEJO DE ESTADO ---
     "GraphQL",
-    "REST API",
+    "Fast API",
     "gRPC",
     "RxJS",
-    "Redux Toolkit",
+    "Redux",
     "Zustand",
-    "Pinia",
+    "Alpine JS",
 
     // --- INTELIGENCIA ARTIFICIAL, DATA Y TENDENCIAS ---
-    "Data Science",
-    "Machine Learning",
-    "Cybersecurity",
-    "Web3 y Blockchain",
+    "Data Grip",
+    "Web3 JS",
     "PyTorch",
     "TensorFlow",
     "Pandas",
     "NumPy",
     "OpenCV",
-    "LangChain"
+];
+
+let iconosEspecialesMarker = [
+    "Less"
+];
+
+let iconosEspecialesOriginal = [
+    "Stylus",
+    "Express",
+    "React Native",
+    "Ionic",
+    "Mongoose",
+    "TensorFlow"
 ];
 
 //CONDICIONES DE ACTIVACION
@@ -183,10 +190,26 @@ function cargarDatos(){
     for(let road of listaMaps){
         let tarjeta = document.createElement("div");
         let texto = document.createElement("span");
+        let icono = document.createElement("i");
+
+        
+        let nombreLimpio = road.toLowerCase().replace(/\s+/g, '');
+        let clase_Icono = `devicon-${nombreLimpio}-plain `;
+
+        if (iconosEspecialesMarker.includes(road)) {
+            clase_Icono = `devicon-${nombreLimpio}-plain-wordmark`;
+        } else if (iconosEspecialesOriginal.includes(road)) {
+            clase_Icono = `devicon-${nombreLimpio}-original `;
+        } else {
+            clase_Icono = `devicon-${nombreLimpio}-plain `;
+        }
+        
+        icono.setAttribute("class", clase_Icono);
 
         texto.textContent = road;
 
         tarjeta.append(texto);
+        tarjeta.append(icono);
         tarjeta.setAttribute("class", "tarjeta__roadmap");
 
         contenedorTarjetad.append(tarjeta);
@@ -207,10 +230,25 @@ function cargarFiltrado(textoFiltrar){
         if(textoCortado === roadCortado){
             let tarjeta = document.createElement("div");
             let texto = document.createElement("span");
+            let icono = document.createElement("i");
 
+            let nombreLimpio = road.toLowerCase().replace(/\s+/g, '');
+            
+            let clase_Icono = `devicon-${nombreLimpio}-plain`;
+
+            if (iconosEspecialesMarker.includes(road)) {
+                clase_Icono = `devicon-${nombreLimpio}-plain-wordmark`;
+            } else if (iconosEspecialesOriginal.includes(road)) {
+                clase_Icono = `devicon-${nombreLimpio}-original`;
+            } else {
+                clase_Icono = `devicon-${nombreLimpio}-plain`;
+            }
+        
+            icono.setAttribute("class", clase_Icono);
             texto.textContent = road;
 
             tarjeta.append(texto);
+            tarjeta.append(icono);
             tarjeta.setAttribute("class", "tarjeta__roadmap");
 
             contenedorTarjetad.append(tarjeta);

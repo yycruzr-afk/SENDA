@@ -66,7 +66,7 @@ h1{
 
 .tarjeta__roadmap{
     background-color: #111418;
-    width: 200px;
+    width: 250px;
     height: 70px;
 
     border-radius: 10px;
@@ -76,6 +76,11 @@ h1{
 
     display: flex;
 
+    justify-content: center;
+    align-items: center;
+
+    justify-content: space-between;
+
 
     transition: border 0.1s ease-in-out, 
     color 0.1s ease-in-out, 
@@ -84,8 +89,23 @@ h1{
     background-color 0.1s ease-in-out;
 }
 
+.tarjeta__roadmap span, i{
+    margin: 0 20px;
+
+}
+
 .tarjeta__roadmap span{
-    margin: auto;
+    font-size: 20px;
+}
+
+.tarjeta__roadmap i{
+    font-size: 30px;
+
+    padding: 10px;
+
+    background-color: #1F2937;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.1);
 }
 
 .tarjeta__roadmap:hover{
