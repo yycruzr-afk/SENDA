@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,10 @@
     <link rel="stylesheet" href="./css/generales.css">
     <link rel="stylesheet" href="./css/roadmap.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-
 </head>
+
 <body>
-    
+
     <header class="cabezera">
 
         <a class="boton_general boton_atras" href="index.html">
@@ -23,7 +23,7 @@
         <h1>ROAD MAPS</h1>
 
         <nav class="menu__nav">
-            <a class="menu__item" href="#">TreeMap</a>
+            <a class="menu__item" href="treemap.html">TreeMap</a>
             <a class="menu__item" href="#">Métodos</a>
             <a class="menu__item" href="#">Comparador</a>
         </nav>
@@ -31,11 +31,26 @@
 
 
     <main>
-
         <section class="tarjetas__RoadMaps">
 
             <div class="busqueda">
                 <input type="text" name="" id="busqueda__roadmap" placeholder="Buscar">
+
+                <select id="select_filtro">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="frontend">Frontend & Estilos</option>
+                    <option value="backend">Backend & Lenguajes</option>
+                    <option value="mobile">Desarrollo Móvil</option>
+                    <option value="bd">Bases de Datos & ORMs</option>
+                    <option value="testing">Testing y Pruebas</option>
+                    <option value="devops">DevOps & Servidores</option>
+                    <option value="cloud">Plataformas Cloud</option>
+                    <option value="ia">Inteligencia Artificial & Data</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Se muestran: <span id="numTecnologias">0</span> tecnologias</p>
             </div>
 
             <div class="contenedor__tarjetas">
@@ -82,4 +97,5 @@
 
     <script src="./scripts/roadmap.js"></script>
 </body>
+
 </html>
