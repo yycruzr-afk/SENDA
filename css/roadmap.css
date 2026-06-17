@@ -23,6 +23,10 @@ h1{
     align-items: center;
 }
 
+.tarjetas__RoadMaps h2{
+    margin: 20px;
+}
+
 .busqueda{
     
     width: 100%;
@@ -40,6 +44,8 @@ h1{
 #select_filtro{
     width: 15%;
     height: 40px;
+
+    min-width: 180px;
 
     padding: 0 10px;
 
@@ -64,6 +70,8 @@ h1{
     width: 30%;
     height: 30px;
 
+    min-width: 500px;
+
     padding: 20px;
 
     background-color: transparent;
@@ -78,7 +86,7 @@ h1{
 }
 
 .contenedor__tarjetas{
-    width: 60%;
+    width: 80%;
 
     padding: 50px;
 
