@@ -13,6 +13,49 @@
 
 
 /*TEXTOS Y LOGO*/
+
+.boton_cambio_tema {
+    width: 180px;
+    height: 45px;
+    font-size: 16px;
+    
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    background-color: #111418;
+    border: 1px solid #1F2937;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Retoque interactivo cuando pasas el mouse por encima */
+.boton_cambio_tema:hover {
+    background-color: #1F2937;
+    border-color: #10B981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* ☀️ COMPORTAMIENTO AUTOMÁTICO EN MODO CLARO */
+body.light-mode .boton_cambio_tema {
+    background-color: #ffffff;
+    color: #1e293b;
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+body.light-mode .boton_cambio_tema:hover {
+    background-color: #f8fafc;
+    border-color: #10B981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+}
+
 .encabezado__logo-box{
     margin: 20px;
     display: flex;
@@ -442,6 +485,10 @@
     display: flex;
     justify-content: space-around;
     border-top: 1px solid #1F2937;
+}
+
+.contenedor_contactanos{
+    padding: 20px;
 }
 
 .foto__footer{

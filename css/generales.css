@@ -120,3 +120,72 @@ body{
     flex-wrap: wrap;
 }
 
+/* SECCION DE COLORES CLAROS */
+
+body.light-mode {
+    background-color: #f8fafc; 
+    color: #0f172a;            
+}
+
+body.light-mode .encabezado,
+body.light-mode .footer,
+body.light-mode .contenedor,
+body.light-mode #inicio_sesion {
+    background-color: #ffffff;
+    color: #1e293b;
+    border-color: #e2e8f0; 
+}
+
+body.light-mode .menu__item {
+    color: #475569;
+}
+
+body.light-mode .modulos__card,
+body.light-mode .tarjetaSobreProyecto,
+body.light-mode .tarjeta__roadmap,
+body.light-mode .menu_hamburgesa {
+    background-color: #ffffff;
+    color: #0f172a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+body.light-mode .modulos__card p {
+    color: #475569;
+}
+
+body.light-mode .input {
+    color: #0f172a;
+}
+body.light-mode .input:focus {
+    background-color: #f1f5f9;
+}
+
+body.light-mode .portada_relleno {
+    background: radial-gradient(circle, #f8fafc 10%, transparent);
+}
+
+body.light-mode .boton_general:hover {
+    background-color: #f1f5f9;
+    color: #10B981;
+}
+
+.btn__tema {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #1F2937;
+    color: #D1D5DB;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 0 10px;
+}
+body.light-mode .btn__tema {
+    border-color: #cbd5e1;
+    color: #334155;
+}
+.btn__tema:hover {
+    transform: scale(1.05);
+}

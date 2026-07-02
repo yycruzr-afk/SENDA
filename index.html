@@ -11,7 +11,10 @@
     <link rel="icon" href="./logos/logo.png" type="image/.png">
 </head>
 
-<body>
+<body class="light-mode">
+
+    <button id="btn_cambio" class="boton_general boton_cambio_tema">Cambiar Modo</button>
+
     <header class="encabezado">
         <div class="encabezado__logo-box">
             <figure class="encabezado__logo">
@@ -95,7 +98,8 @@
                 <h1 class="portada__titulo">SENDA</h1>
                 <p class="portada__descripcion">Software de Estandarización de Niveles y Dependencias de Aprendizaje</p>
 
-                <button class="boton_general portada__boton" onclick="window.location.href=`roadmap.html`">Empezar</button>
+                <button class="boton_general portada__boton"
+                    onclick="window.location.href=`roadmap.html`">Empezar</button>
             </div>
 
             <video class="portada_video" src="./videos/fondo.mp4" autoplay muted loop loading="lazy"></video>
@@ -197,6 +201,24 @@
                     <p>Software de Estandarización de Niveles y Dependencias de Aprendizaje</p>
                 </div>
             </div>
+
+            <div class="contenedor_contactanos">
+                <span>Contactanos</span>
+                <div>
+                    <a href="https://google.com" target="_blank">
+                        <img src="./logos/google.svg" alt="logo de google" class="iconos_login">
+                    </a>
+
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="./logos/facebook.svg" alt="logo de facebook" class="iconos_login">
+                    </a>
+
+                    <a href="https://github.com" target="_blank">
+                        <img src="./logos/github.svg" alt="logo de github" class="iconos_login">
+                    </a>
+                </div>
+            </div>
+
             <div class="menu__footer">
                 <a class="menu__item" href="treemap.html">TreeMap</a>
                 <a class="menu__item" href="roadmap.html">Roadmaps</a>
