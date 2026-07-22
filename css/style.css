@@ -88,64 +88,6 @@ body.light-mode .boton_cambio_tema:hover {
     height: 50px;
 }
 
-/*MENU HAMBUERGESA*/
-
-.btn__hamburgesa{
-    background-color: transparent;
-    border: none;
-
-    display: none;
-
-    margin: 0 30px;
-}
-
-.btn__hamburgesa img{
-    margin: 5px;
-    padding: 0;
-
-}
-
-.menu_hamburgesa{
-    background-color: #080A0C;
-    position: fixed;
-
-    display: flex;
-    flex-direction: column;
-
-    right: 20px;
-    top: 130px;
-    z-index: 10;
-
-    border-radius: 10px;
-
-    box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
-
-    display: none;
-}
-
-.menu_hamburgesa a{
-    margin: 20px 10px;
-
-    border-radius: 0;
-
-}
-
-@media (max-width: 1650px){
-    .menu__nav{
-        display: none;
-    }
-
-    .menu_hamburgesa{
-        display: none;
-    }
-
-    .btn__hamburgesa{
-        display: inline;
-    }
-}
-
-
-
 /* VENTANA MODAL DE INICIO SESION */
 #inicio_sesion{
     width: 40%;
